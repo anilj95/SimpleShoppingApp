@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context="com.example.anil.shoppingApplication.MainActivity"
+    android:background="@mipmap/background">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/item_yourshop_header" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_speakers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginBottom="55dp"
+        tools:listitem="@layout/item_speaker_list"
+        android:layout_below="@+id/header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/next_btn"
+        android:id="@+id/btn_nxt"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
